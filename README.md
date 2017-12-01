@@ -6,3 +6,9 @@ Kauaプロジェクト著のプログラミングGaucheの方法の方が良さ�
 chicken schemeのインタプリタがあれば  
 $ csi -i myserve.scm  
 で動くはずです。(mac, google chromeとubuntu, firefoxのみで動作することは確認しています。)  
+
+![_20170506_142751](https://user-images.githubusercontent.com/17234243/33469430-31bcd454-d6a6-11e7-874d-016960a7c16e.JPG)  
+
+フォームに名前を打ち込んでEnter  
+![_20170506_142733](https://user-images.githubusercontent.com/17234243/33469508-a9c1a9b6-d6a6-11e7-9bcc-6c49dda5f15a.JPG)
+
