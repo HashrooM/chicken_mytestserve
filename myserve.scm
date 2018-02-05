@@ -26,7 +26,7 @@
     (if i1
 	(cons
 	 (cons
-	  (string->symbol (string-upcase (substring s 0 i1)))
+	  (string->symbol (substring s 0 i1))
 	  (decode-param (substring s (+ i1 1) (if (equal? i2 #f)
 						  (string-length s)
 						  i2))))
@@ -104,7 +104,7 @@
 ;; request handler...test
 (define (hello-request-handler path header params ostream)
   (if (equal? path "greeting")
-      (let ((name (assoc 'NAME params)))
+      (let ((name (assoc 'name params)))
 	(if (not name)
 	    (display "HTTP/1.1 200 OK\n\n<html><form>What is your name?<input name='name' /></form></html>" ostream)
 	    (display (string-join `("HTTP/1.1 200 OK\n\n<html>Nice to meet you, " ,(cdr name) "!!</html>") "") ostream)))
@@ -112,4 +112,3 @@
 
 ;; main
 ;;(serve hello-request-handler)
-
